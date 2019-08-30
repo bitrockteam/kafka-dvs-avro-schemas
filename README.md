@@ -5,7 +5,7 @@
 
 ### Repositories
 
-Generated artifacts are published to a private Nexus repository. Make sure to provide a `~/.sbt/.credentials.geostream` file containing valid credentials:
+Generated artifacts are published to a private Nexus repository. Make sure to provide a `~/.sbt/.credentials.flightstream` file containing valid credentials:
 
 ```properties
 realm=Sonatype Nexus Repository Manager
