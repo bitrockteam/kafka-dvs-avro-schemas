@@ -1,0 +1,18 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol AirportRawProtocol {
+
+  record AirlineRaw {
+    string airlineId;
+    string nameAirline;
+    string codeIataAirline;
+    string codeIcaoAirline;
+    string callsing;
+    string type;
+    string statusAirline;
+    string sizeAirline;
+    string nameCountry;
+    string codeIso2Country;
+
+  }
+
+}

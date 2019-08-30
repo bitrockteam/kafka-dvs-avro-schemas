@@ -1,0 +1,14 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol AirportRawProtocol {
+
+  record CityRaw {
+    string cityId;
+    string nameCity;
+    string codeIataCity;
+    string codeIso2Country;
+    string latitudeCity;
+    string longitudeCity;
+
+  }
+
+}

@@ -1,0 +1,51 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol FlightRawProtocol {
+
+  record Flight {
+    string iataNumber;
+    string icaoNumber;
+    string number;
+  }
+
+  record Aircraft {
+    string regNumber;
+    string icaoCode;
+    string icao24;
+    string iataCode;
+  }
+
+  record CommonCode  {
+    string iataCode;
+    string icaoCode;
+  }
+
+  record Speed {
+     double horizontal;
+     double vertical;
+  }
+
+  record Geography {
+    double latitude;
+    double longitude;
+    double altitude;
+    double direction;
+  }
+
+  record System {
+    string updated;
+    string squawk;
+  }
+
+  record FlightRaw {
+    Geography geography;
+    Speed speed;
+    CommonCode departure;
+    CommonCode arrival;
+    Aircraft aircraft;
+    CommonCode airline;
+    Flight flight;
+    System system;
+    string status;
+  }
+
+}
