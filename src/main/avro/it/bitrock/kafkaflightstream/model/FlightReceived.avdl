@@ -1,18 +1,41 @@
 @namespace("it.bitrock.kafkaflightstream.model")
 protocol FlightReceivedProtocol {
 
-  record GeographyEvent {
+  record GeographyInfo {
     double latitude;
     double longitude;
     double altitude;
     double direction;
   }
 
-  record FlightReceived {
-    GeographyEvent geography;
+  record AirportInfo {
+    string codeAirport;
+    string nameAirport;
+    string nameCountry;
+    string codeIso2Country;
+  }
+
+  record AirplaneInfo {
+    string productionLine;
+    string modelCode;
+  }
+
+  record AirlineInfo {
+    string nameAirline;
+    string founding;
+    string sizeAirline;
+  }
+
+  record FlightEnrichedEvent {
+    GeographyInfo geography;
     double speed;
-    string nameAirportDeparture;
-    string nameAirportArrival;
+
+    AirportInfo airportDeparture;
+    AirportInfo airportArrival;
+
+    //AirplaneInfo airplane;
+    //AirlineInfo airline;
+
     string status;
   }
 
