@@ -1,0 +1,19 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol FlightReceivedProtocol {
+
+  record GeographyEvent {
+    double latitude;
+    double longitude;
+    double altitude;
+    double direction;
+  }
+
+  record FlightReceived {
+    GeographyEvent geography;
+    double speed;
+    string nameAirportDeparture;
+    string nameAirportArrival;
+    string status;
+  }
+
+}
