@@ -22,7 +22,6 @@ protocol FlightReceivedProtocol {
 
   record AirlineInfo {
     string nameAirline;
-    string founding;
     string sizeAirline;
   }
 
@@ -33,8 +32,43 @@ protocol FlightReceivedProtocol {
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
 
-    //AirplaneInfo airplane;
-    //AirlineInfo airline;
+    AirlineInfo airline;
+    AirplaneInfo airplane;
+
+    string status;
+  }
+
+  record FlightWithDepartureAirportInfo{
+    GeographyInfo geography;
+    double speed;
+
+    AirportInfo airportDeparture;
+    string codeAirportArrival;
+    string airlineCode;
+
+    string status;
+  }
+
+  record FlightWithAllAirportInfo {
+    GeographyInfo geography;
+    double speed;
+
+    AirportInfo airportDeparture;
+    AirportInfo airportArrival;
+    string airlineCode;
+
+
+    string status;
+  }
+
+  record FlightWithAirline {
+    GeographyInfo geography;
+    double speed;
+
+    AirportInfo airportDeparture;
+    AirportInfo airportArrival;
+
+    AirlineInfo airline;
 
     string status;
   }
