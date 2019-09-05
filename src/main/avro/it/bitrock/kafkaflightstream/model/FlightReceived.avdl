@@ -25,19 +25,6 @@ protocol FlightReceivedProtocol {
     string sizeAirline;
   }
 
-  record FlightEnrichedEvent {
-    GeographyInfo geography;
-    double speed;
-
-    AirportInfo airportDeparture;
-    AirportInfo airportArrival;
-
-    AirlineInfo airline;
-    AirplaneInfo airplane;
-
-    string status;
-  }
-
   record FlightWithDepartureAirportInfo{
     GeographyInfo geography;
     double speed;
@@ -45,6 +32,7 @@ protocol FlightReceivedProtocol {
     AirportInfo airportDeparture;
     string codeAirportArrival;
     string airlineCode;
+    string airplaneRegNumber;
 
     string status;
   }
@@ -56,6 +44,7 @@ protocol FlightReceivedProtocol {
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
     string airlineCode;
+    string airplaneRegNumber;
 
 
     string status;
@@ -69,6 +58,20 @@ protocol FlightReceivedProtocol {
     AirportInfo airportArrival;
 
     AirlineInfo airline;
+    string airplaneRegNumber;
+
+    string status;
+  }
+
+  record FlightEnrichedEvent {
+    GeographyInfo geography;
+    double speed;
+
+    AirportInfo airportDeparture;
+    AirportInfo airportArrival;
+
+    AirlineInfo airline;
+    union{null, AirplaneInfo} airplane = null;
 
     string status;
   }
