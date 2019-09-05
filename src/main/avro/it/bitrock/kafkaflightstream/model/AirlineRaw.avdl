@@ -7,12 +7,10 @@ protocol AirportRawProtocol {
     string codeIataAirline;
     string codeIcaoAirline;
     string callsing;
-    string type;
     string statusAirline;
     string sizeAirline;
     string nameCountry;
     string codeIso2Country;
-
   }
 
 }
