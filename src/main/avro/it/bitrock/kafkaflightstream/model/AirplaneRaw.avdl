@@ -1,0 +1,17 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol AirplaneRawProtocol {
+
+  record AirplaneRaw {
+    string airplaneId;
+    string numberRegistration;
+    string productionLine;
+    string airplaneIataType;
+    string planeModel;
+    string modelCode;
+    string hexIcaoAirplane;
+    string codeIataPlaneLong;
+    string enginesType;
+    string planeAge;
+  }
+
+}
