@@ -6,7 +6,11 @@ protocol AirportListProtocol {
     long eventCount;
   }
 
-  record TopAirportList {
+  record TopArrivalAirportList {
+    array<Airport> elements = [];
+  }
+
+  record TopDepartureAirportList {
     array<Airport> elements = [];
   }
 
