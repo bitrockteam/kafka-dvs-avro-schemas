@@ -1,0 +1,12 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol SpeedListProtocol {
+
+  record SpeedFlight {
+    string flightCode;
+    double speed;
+  }
+
+  record TopSpeedList {
+    array<SpeedFlight> elements = [];
+  }
+}
