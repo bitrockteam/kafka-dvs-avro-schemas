@@ -25,55 +25,52 @@ protocol FlightReceivedProtocol {
     string sizeAirline;
   }
 
-  record FlightWithDepartureAirportInfo{
+  record FlightWithDepartureAirportInfo {
+    string iataNumber;
     GeographyInfo geography;
     double speed;
-
     AirportInfo airportDeparture;
     string codeAirportArrival;
     string airlineCode;
     string airplaneRegNumber;
-
     string status;
+    string updated;
   }
 
   record FlightWithAllAirportInfo {
+    string iataNumber;
     GeographyInfo geography;
     double speed;
-
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
     string airlineCode;
     string airplaneRegNumber;
-
-
     string status;
+    string updated;
   }
 
   record FlightWithAirline {
+    string iataNumber;
     GeographyInfo geography;
     double speed;
-
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
-
     AirlineInfo airline;
     string airplaneRegNumber;
-
     string status;
+    string updated;
   }
 
   record FlightEnrichedEvent {
+    string iataNumber;
     GeographyInfo geography;
     double speed;
-
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
-
     AirlineInfo airline;
     union{null, AirplaneInfo} airplane = null;
-
     string status;
+    string updated;
   }
 
 }
