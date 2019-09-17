@@ -1,0 +1,8 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol CountFlightStatusProtocol {
+
+  record CountFlightStatus {
+    string flightStatus;
+    long eventCount;
+  }
+}
