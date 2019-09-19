@@ -1,0 +1,13 @@
+@namespace("it.bitrock.kafkaflightstream.model")
+protocol AirlineListProtocol {
+
+  record Airline {
+    string airlineName;
+    long eventCount;
+  }
+
+  record TopAirlineList {
+    array<Airline> elements = [];
+  }
+
+}
