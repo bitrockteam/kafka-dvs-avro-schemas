@@ -16,17 +16,20 @@ protocol FlightReceivedProtocol {
   }
 
   record AirplaneInfo {
+    string numberRegistration;
     string productionLine;
     string modelCode;
   }
 
   record AirlineInfo {
+    string codeAirline;
     string nameAirline;
     string sizeAirline;
   }
 
   record FlightWithDepartureAirportInfo {
     string iataNumber;
+    string icaoNumber;
     GeographyInfo geography;
     double speed;
     AirportInfo airportDeparture;
@@ -39,6 +42,7 @@ protocol FlightReceivedProtocol {
 
   record FlightWithAllAirportInfo {
     string iataNumber;
+    string icaoNumber;
     GeographyInfo geography;
     double speed;
     AirportInfo airportDeparture;
@@ -51,6 +55,7 @@ protocol FlightReceivedProtocol {
 
   record FlightWithAirline {
     string iataNumber;
+    string icaoNumber;
     GeographyInfo geography;
     double speed;
     AirportInfo airportDeparture;
@@ -63,6 +68,7 @@ protocol FlightReceivedProtocol {
 
   record FlightEnrichedEvent {
     string iataNumber;
+    string icaoNumber;
     GeographyInfo geography;
     double speed;
     AirportInfo airportDeparture;
