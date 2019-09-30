@@ -79,4 +79,8 @@ protocol FlightReceivedProtocol {
     string updated;
   }
 
+  record FlightReceivedList {
+    array<FlightEnrichedEvent> elements = [];
+  }
+
 }
