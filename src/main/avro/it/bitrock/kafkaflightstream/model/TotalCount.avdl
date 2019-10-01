@@ -1,8 +1,7 @@
 @namespace("it.bitrock.kafkaflightstream.model")
 protocol TotalCountProtocol {
 
-  record CountFlightStatus {
-    string flightStatus;
+  record CountFlight {
     long eventCount;
   }
 

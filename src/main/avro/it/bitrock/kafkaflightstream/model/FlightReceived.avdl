@@ -66,7 +66,7 @@ protocol FlightReceivedProtocol {
     string updated;
   }
 
-  record FlightEnrichedEvent {
+  record FlightReceived {
     string iataNumber;
     string icaoNumber;
     GeographyInfo geography;
@@ -74,13 +74,13 @@ protocol FlightReceivedProtocol {
     AirportInfo airportDeparture;
     AirportInfo airportArrival;
     AirlineInfo airline;
-    union{null, AirplaneInfo} airplane = null;
+    AirplaneInfo airplane;
     string status;
     string updated;
   }
 
   record FlightReceivedList {
-    array<FlightEnrichedEvent> elements = [];
+    array<FlightReceived> elements = [];
   }
 
 }
