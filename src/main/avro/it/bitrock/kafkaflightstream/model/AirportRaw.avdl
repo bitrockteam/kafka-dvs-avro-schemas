@@ -10,6 +10,8 @@ protocol AirportRawProtocol {
     string nameCountry;
     string codeIso2Country;
     string codeIataCity;
+    string timezone;
+    string gmt;
   }
 
 }
