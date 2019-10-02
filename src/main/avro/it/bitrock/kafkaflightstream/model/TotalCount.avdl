@@ -2,10 +2,12 @@
 protocol TotalCountProtocol {
 
   record CountFlight {
+    string windowStartTime;
     long eventCount;
   }
 
   record CountAirline {
+    string windowStartTime;
     long eventCount;
   }
 }

@@ -13,6 +13,8 @@ protocol FlightReceivedProtocol {
     string nameAirport;
     string nameCountry;
     string codeIso2Country;
+    string timezone;
+    string gmt;
   }
 
   record AirplaneInfo {
