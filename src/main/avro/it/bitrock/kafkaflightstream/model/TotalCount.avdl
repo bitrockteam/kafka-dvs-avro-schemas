@@ -6,6 +6,10 @@ protocol TotalCountProtocol {
     long eventCount;
   }
 
+  record FlightNumberList {
+    array<string> elements = [];
+  }
+
   record CountAirline {
     string windowStartTime;
     long eventCount;
