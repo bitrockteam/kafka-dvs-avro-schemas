@@ -14,7 +14,7 @@ lazy val compileSettings = Seq(
 lazy val dependenciesSettings = Seq(
   credentials ++= Seq(
     baseDirectory.value / ".sbt" / ".credentials",
-    Path.userHome / ".sbt" / ".credentials.flightstream"
+    Path.userHome / ".sbt" / ".credentials.dvs"
   ).collect {
     case c if c.exists => Credentials(c)
   },
@@ -40,8 +40,8 @@ lazy val publishSettings = Seq(
 
 lazy val root = (project in file("."))
   .settings(
-    name := "kafka-flightstream-avro-schemas",
-    organization := "it.bitrock.kafkaflightstream"
+    name := "kafka-dvs-avro-schemas",
+    organization := "it.bitrock.dvs"
   )
   .settings(compileSettings: _*)
   .settings(dependenciesSettings: _*)

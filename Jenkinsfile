@@ -3,7 +3,7 @@ pipeline {
     environment {
       GITHUB_CREDENTIALS = 'BitrockCI token'
       GITHUB_ACCOUNT = 'bitrockteam'
-      GITHUB_REPO = 'kafka-flightstream-avro-schemas'
+      GITHUB_REPO = 'kafka-dvs-avro-schemas'
       GITHUB_SSH = "centos"
       RELEASE_BRANCH = "master"
     }
