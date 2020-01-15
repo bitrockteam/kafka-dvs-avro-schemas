@@ -1,4 +1,4 @@
-@namespace("it.bitrock.dvs.model")
+@namespace("it.bitrock.dvs.model.avro")
 protocol AirplaneRawProtocol {
 
   record AirplaneRaw {
