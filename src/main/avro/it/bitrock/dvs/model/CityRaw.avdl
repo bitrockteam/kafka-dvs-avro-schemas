@@ -1,4 +1,4 @@
-@namespace("it.bitrock.kafkaflightstream.model")
+@namespace("it.bitrock.dvs.model")
 protocol AirportRawProtocol {
 
   record CityRaw {
