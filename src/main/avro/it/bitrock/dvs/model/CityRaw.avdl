@@ -2,12 +2,12 @@
 protocol AirportRawProtocol {
 
   record CityRaw {
-    string cityId;
+    long cityId;
     string nameCity;
     string codeIataCity;
     string codeIso2Country;
-    string latitudeCity;
-    string longitudeCity;
+    double latitudeCity;
+    double longitudeCity;
 
   }
 
