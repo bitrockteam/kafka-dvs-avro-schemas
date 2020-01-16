@@ -21,7 +21,7 @@ protocol FlightRawProtocol {
 
   record Speed {
      double horizontal;
-     double vertical;
+     double vspeed;
   }
 
   record Geography {
@@ -32,8 +32,7 @@ protocol FlightRawProtocol {
   }
 
   record System {
-    string updated;
-    string squawk;
+    timestamp_ms updated;
   }
 
   record FlightRaw {
