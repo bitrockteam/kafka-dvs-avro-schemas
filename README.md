@@ -1,5 +1,6 @@
 # DVS Avro Schemas
 
+[![Build Status](https://iproject-jenkins.reactive-labs.io/buildStatus/icon?job=kafka-dvs-avro-schemas%2Fmaster)](https://iproject-jenkins.reactive-labs.io/job/kafka-dvs-avro-schemas/job/master/)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 ## Dependencies
