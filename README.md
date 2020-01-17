@@ -33,3 +33,7 @@ Publish artifacts locally by running the following command:
 ```sh
 sbt publishLocal
 ```
+
+## Contribution
+
+If you'd like to contribute to the project, make sure to review our [recommendations](CONTRIBUTING.md).
