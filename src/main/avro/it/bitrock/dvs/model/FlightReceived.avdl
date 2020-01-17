@@ -26,7 +26,7 @@ protocol FlightReceivedProtocol {
   record AirlineInfo {
     string codeAirline;
     string nameAirline;
-    string sizeAirline;
+    long sizeAirline;
   }
 
   record FlightWithDepartureAirportInfo {
@@ -39,7 +39,7 @@ protocol FlightReceivedProtocol {
     string airlineCode;
     string airplaneRegNumber;
     string status;
-    string updated;
+    timestamp_ms updated;
   }
 
   record FlightWithAllAirportInfo {
@@ -52,7 +52,7 @@ protocol FlightReceivedProtocol {
     string airlineCode;
     string airplaneRegNumber;
     string status;
-    string updated;
+    timestamp_ms updated;
   }
 
   record FlightWithAirline {
@@ -65,7 +65,7 @@ protocol FlightReceivedProtocol {
     AirlineInfo airline;
     string airplaneRegNumber;
     string status;
-    string updated;
+    timestamp_ms updated;
   }
 
   record FlightReceived {
@@ -78,7 +78,7 @@ protocol FlightReceivedProtocol {
     AirlineInfo airline;
     AirplaneInfo airplane;
     string status;
-    string updated;
+    timestamp_ms updated;
   }
 
   record FlightReceivedList {
