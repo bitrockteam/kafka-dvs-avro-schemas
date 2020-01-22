@@ -1,18 +1,7 @@
 # DVS Avro Schemas
 
-
-## Dependencies
-
-### Repositories
-
-Generated artifacts are published to a private Nexus repository. Make sure to provide a `~/.sbt/.credentials.bitrock` file containing valid credentials:
-
-```properties
-realm=Sonatype Nexus Repository Manager
-host=nexus.reactive-labs.io
-user=<your-username>
-password=<your-password>
-```
+[![Build Status](https://iproject-jenkins.reactive-labs.io/buildStatus/icon?job=kafka-dvs-avro-schemas%2Fmaster)](https://iproject-jenkins.reactive-labs.io/job/kafka-dvs-avro-schemas/job/master/)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 ## How to build
 
@@ -31,3 +20,7 @@ Publish artifacts locally by running the following command:
 ```sh
 sbt publishLocal
 ```
+
+## Contribution
+
+If you'd like to contribute to the project, make sure to review our [recommendations](CONTRIBUTING.md).
