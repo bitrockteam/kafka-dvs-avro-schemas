@@ -10,7 +10,7 @@ object Dependencies {
 
   object Versions {
 
-    lazy val Scala = "2.12.8"
+    lazy val Scala = "2.12.10"
     lazy val Avro  = "1.8.2"
 
   }
