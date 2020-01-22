@@ -4,7 +4,7 @@ object Dependencies {
 
   object CustomRepositories {
 
-    lazy val BitrockNexus = "Bitrock Nexus" at "https://nexus.reactive-labs.io/repository/maven-bitrock/"
+    lazy val BitrockNexus = "Bitrock Nexus" at "https://nexus.reactive-labs.io/repository/maven-bitrock-public/"
 
   }
 
