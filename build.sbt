@@ -12,16 +12,16 @@ lazy val compileSettings = Seq(
 )
 
 lazy val dependenciesSettings = Seq(
+  libraryDependencies ++= prodDeps
+)
+
+lazy val publishSettings = Seq(
   credentials ++= Seq(
     baseDirectory.value / ".sbt" / ".credentials",
     Path.userHome / ".sbt" / ".credentials.bitrock"
   ).collect {
     case c if c.exists => Credentials(c)
   },
-  libraryDependencies ++= prodDeps
-)
-
-lazy val publishSettings = Seq(
   publishTo := Some(CustomRepositories.BitrockNexus),
   releaseProcess := Seq[ReleaseStep](
     checkSnapshotDependencies,
