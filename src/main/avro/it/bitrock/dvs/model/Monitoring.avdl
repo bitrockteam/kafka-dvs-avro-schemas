@@ -1,0 +1,10 @@
+@namespace("it.bitrock.dvs.model.avro")
+protocol Monitoring {
+
+  record ComputationStatus {
+    timestamp_ms processingTime;
+    timestamp_ms minUpdated;
+    timestamp_ms maxUpdated;
+  }
+
+}
