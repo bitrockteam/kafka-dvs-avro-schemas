@@ -14,7 +14,17 @@ protocol FlightRawProtocol {
     string iataCode;
   }
 
-  record CommonCode  {
+  record Airline {
+    string iataCode;
+    string icaoCode;
+  }
+
+  record Arrival {
+    string iataCode;
+    string icaoCode;
+  }
+
+  record Departure {
     string iataCode;
     string icaoCode;
   }
@@ -38,10 +48,10 @@ protocol FlightRawProtocol {
   record FlightRaw {
     Geography geography;
     Speed speed;
-    CommonCode departure;
-    CommonCode arrival;
+    Departure departure;
+    Arrival arrival;
     Aircraft aircraft;
-    CommonCode airline;
+    Airline airline;
     Flight flight;
     System system;
     string status;
