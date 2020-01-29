@@ -1,0 +1,10 @@
+@namespace("it.bitrock.dvs.model.avro")
+protocol ErrorHandlerProtocol {
+
+  record ParserError {
+    string errorMessage;
+    string failedJson;
+    timestamp_ms timestamp;
+  }
+
+}
