@@ -1,12 +1,12 @@
 @namespace("it.bitrock.dvs.model.avro")
 protocol SpeedListProtocol {
 
-  record SpeedFlight {
+  record TopSpeed {
     string flightCode;
     double speed;
   }
 
   record TopSpeedList {
-    array<SpeedFlight> elements = [];
+    array<TopSpeed> elements = [];
   }
 }
