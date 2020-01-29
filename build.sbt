@@ -16,10 +16,7 @@ lazy val dependenciesSettings = Seq(
 )
 
 lazy val publishSettings = Seq(
-  credentials ++= Seq(
-    baseDirectory.value / ".sbt" / ".credentials",
-    Path.userHome / ".sbt" / ".credentials.bitrock"
-  ).collect {
+  credentials ++= Seq(baseDirectory.value / ".sbt" / ".credentials").collect {
     case c if c.exists => Credentials(c)
   },
   publishTo := Some(CustomRepositories.BitrockNexus),

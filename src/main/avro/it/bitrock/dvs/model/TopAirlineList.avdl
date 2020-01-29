@@ -1,13 +1,13 @@
 @namespace("it.bitrock.dvs.model.avro")
 protocol AirlineListProtocol {
 
-  record Airline {
+  record TopAirline {
     string airlineName;
     long eventCount;
   }
 
   record TopAirlineList {
-    array<Airline> elements = [];
+    array<TopAirline> elements = [];
   }
 
 }
