@@ -1,17 +1,17 @@
 @namespace("it.bitrock.dvs.model.avro")
 protocol AirportListProtocol {
 
-  record Airport {
+  record TopAirport {
     string airportCode;
     long eventCount;
   }
 
   record TopArrivalAirportList {
-    array<Airport> elements = [];
+    array<TopAirport> elements = [];
   }
 
   record TopDepartureAirportList {
-    array<Airport> elements = [];
+    array<TopAirport> elements = [];
   }
 
 }
