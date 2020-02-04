@@ -2,6 +2,7 @@
 protocol ErrorHandlerProtocol {
 
   record ParserError {
+    string errorSource;
     string errorMessage;
     string failedJson;
     timestamp_ms timestamp;
