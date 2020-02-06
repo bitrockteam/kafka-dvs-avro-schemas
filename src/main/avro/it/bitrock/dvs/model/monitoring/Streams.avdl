@@ -1,5 +1,5 @@
 @namespace("it.bitrock.dvs.model.avro.monitoring")
-protocol Streams {
+protocol StreamsProtocol {
 
   record FlightReceivedListComputationStatus {
     timestamp_ms windowTime;
