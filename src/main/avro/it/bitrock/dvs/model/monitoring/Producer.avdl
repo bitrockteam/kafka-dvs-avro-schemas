@@ -1,0 +1,13 @@
+@namespace("it.bitrock.dvs.model.avro.monitoring")
+protocol ProducerProtocol {
+
+  record FlightRequestComputationStatus {
+    timestamp_ms messageReceivedOn;
+    timestamp_ms minUpdated;
+    timestamp_ms maxUpdated;
+    int numErrors;
+    int numValid;
+    int numInvalid;
+  }
+
+}
