@@ -10,7 +10,7 @@ protocol MonitoringProtocol {
   }
 
   record FlightRequestComputationStatus {
-    timestamp_ms processingTime;
+    timestamp_ms messageReceivedOn;
     timestamp_ms minUpdated;
     timestamp_ms maxUpdated;
     int numErrors;
