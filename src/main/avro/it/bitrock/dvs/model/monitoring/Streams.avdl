@@ -6,7 +6,8 @@ protocol StreamsProtocol {
     timestamp_ms emissionTime;
     timestamp_ms minUpdated;
     timestamp_ms maxUpdated;
-    int windowElements = 0;
+    timestamp_ms averageUpdated;
+    int windowElements;
   }
 
 }
