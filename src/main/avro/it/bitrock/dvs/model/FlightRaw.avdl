@@ -2,7 +2,7 @@
 protocol FlightRawProtocol {
 
   record Flight {
-    string iataNumber;
+    union { null, string } iataNumber;
     string icaoNumber;
     string number;
   }
@@ -15,18 +15,18 @@ protocol FlightRawProtocol {
   }
 
   record Airline {
-    string iataCode;
+    union { null, string } iataCode;
     string icaoCode;
   }
 
   record Arrival {
     string iataCode;
-    string icaoCode;
+    union { null, string } icaoCode;
   }
 
   record Departure {
     string iataCode;
-    string icaoCode;
+    union { null, string } icaoCode;
   }
 
   record Speed {
