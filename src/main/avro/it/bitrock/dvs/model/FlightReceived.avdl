@@ -11,6 +11,8 @@ protocol FlightReceivedProtocol {
   record AirportInfo {
     string codeAirport;
     string nameAirport;
+    double latitudeAirport;
+    double longitudeAirport;
     string nameCountry;
     string codeIso2Country;
     string timezone;
