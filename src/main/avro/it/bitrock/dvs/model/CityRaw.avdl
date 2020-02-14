@@ -4,8 +4,8 @@ protocol AirportRawProtocol {
   record CityRaw {
     long id;
     string name;
-    string codeIata;
-    string countryCodeIso2;
+    string iataCode;
+    string countryIsoCode2;
     double latitude;
     double longitude;
 

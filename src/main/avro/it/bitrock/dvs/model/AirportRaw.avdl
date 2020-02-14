@@ -4,12 +4,12 @@ protocol AirportRawProtocol {
   record AirportRaw {
     long id;
     string name;
-    string codeIata;
+    string iataCode;
     double latitude;
     double longitude;
     string countryName;
-    string countryCodeIso2;
-    string cityCodeIata;
+    string countryIsoCode2;
+    string cityIataCode;
     string timezone;
     string gmt;
   }

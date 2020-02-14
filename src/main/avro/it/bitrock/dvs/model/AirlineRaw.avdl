@@ -4,13 +4,13 @@ protocol AirportRawProtocol {
   record AirlineRaw {
     long id;
     string name;
-    string codeIata;
-    string codeIcao;
+    string iataCode;
+    string icaoCode;
     string callsing;
     string status;
     long size;
     string countryName;
-    string countryCodeIso2;
+    string countryIsoCode2;
   }
 
 }

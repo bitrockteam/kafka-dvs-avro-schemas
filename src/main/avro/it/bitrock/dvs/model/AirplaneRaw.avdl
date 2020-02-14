@@ -8,7 +8,7 @@ protocol AirplaneRawProtocol {
     string model;
     string modelCode;
     string hexIcao;
-    string codeIata;
+    string iataCode;
     string owner;
     string enginesType;
     string age;

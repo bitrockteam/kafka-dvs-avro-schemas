@@ -14,7 +14,7 @@ protocol FlightReceivedProtocol {
     double latitude;
     double longitude;
     string countryName;
-    string countryCodeIso2;
+    string countryIsoCode2;
     string timezone;
     string gmt;
   }
