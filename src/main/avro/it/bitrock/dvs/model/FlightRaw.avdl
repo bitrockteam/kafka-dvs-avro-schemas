@@ -2,7 +2,7 @@
 protocol FlightRawProtocol {
 
   record Flight {
-    union { null, string } iataNumber;
+    string iataNumber;
     string icaoNumber;
     string number;
   }
