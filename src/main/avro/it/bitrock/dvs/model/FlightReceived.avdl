@@ -9,26 +9,26 @@ protocol FlightReceivedProtocol {
   }
 
   record AirportInfo {
-    string codeAirport;
-    string nameAirport;
-    double latitudeAirport;
-    double longitudeAirport;
-    string nameCountry;
-    string codeIso2Country;
+    string code;
+    string name;
+    double latitude;
+    double longitude;
+    string countryName;
+    string countryCodeIso2;
     string timezone;
     string gmt;
   }
 
   record AirplaneInfo {
-    string numberRegistration;
+    string registrationNumber;
     string productionLine;
     string modelCode;
   }
 
   record AirlineInfo {
-    string codeAirline;
-    string nameAirline;
-    long sizeAirline;
+    string code;
+    string name;
+    long size;
   }
 
   record FlightWithDepartureAirportInfo {
@@ -36,8 +36,8 @@ protocol FlightReceivedProtocol {
     string icaoNumber;
     GeographyInfo geography;
     double speed;
-    AirportInfo airportDeparture;
-    string codeAirportArrival;
+    AirportInfo departureAirport;
+    string arrivalAirportCode;
     string airlineCode;
     string airplaneRegNumber;
     string status;
@@ -49,8 +49,8 @@ protocol FlightReceivedProtocol {
     string icaoNumber;
     GeographyInfo geography;
     double speed;
-    AirportInfo airportDeparture;
-    AirportInfo airportArrival;
+    AirportInfo departureAirport;
+    AirportInfo arrivalAirport;
     string airlineCode;
     string airplaneRegNumber;
     string status;
@@ -62,8 +62,8 @@ protocol FlightReceivedProtocol {
     string icaoNumber;
     GeographyInfo geography;
     double speed;
-    AirportInfo airportDeparture;
-    AirportInfo airportArrival;
+    AirportInfo departureAirport;
+    AirportInfo arrivalAirport;
     AirlineInfo airline;
     string airplaneRegNumber;
     string status;
@@ -75,8 +75,8 @@ protocol FlightReceivedProtocol {
     string icaoNumber;
     GeographyInfo geography;
     double speed;
-    AirportInfo airportDeparture;
-    AirportInfo airportArrival;
+    AirportInfo departureAirport;
+    AirportInfo arrivalAirport;
     AirlineInfo airline;
     AirplaneInfo airplane;
     string status;
