@@ -2,17 +2,17 @@
 protocol AirplaneRawProtocol {
 
   record AirplaneRaw {
-    string numberRegistration;
+    string registrationNumber;
     string productionLine;
-    string airplaneIataType;
-    string planeModel;
+    string iataType;
+    string model;
     string modelCode;
-    string hexIcaoAirplane;
-    string codeIataPlaneLong;
-    string planeOwner;
+    string hexIcao;
+    string iataCode;
+    string owner;
     string enginesType;
-    string planeAge;
-    string planeStatus;
+    string age;
+    string status;
   }
 
 }

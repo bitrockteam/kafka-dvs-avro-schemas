@@ -2,7 +2,7 @@
 protocol AirportListProtocol {
 
   record TopAirport {
-    string airportCode;
+    string code;
     long eventCount;
   }
 

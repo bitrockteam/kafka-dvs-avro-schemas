@@ -2,7 +2,7 @@
 protocol AirlineListProtocol {
 
   record TopAirline {
-    string airlineName;
+    string name;
     long eventCount;
   }
 
