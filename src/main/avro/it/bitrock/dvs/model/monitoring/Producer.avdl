@@ -3,9 +3,9 @@ protocol ProducerProtocol {
 
   record FlightRequestComputationStatus {
     timestamp_ms messageReceivedOn;
-    timestamp_ms minUpdated;
-    timestamp_ms maxUpdated;
-    timestamp_ms averageUpdated;
+    union { null, timestamp_ms } minUpdated;
+    union { null, timestamp_ms } maxUpdated;
+    union { null, timestamp_ms } averageUpdated;
     int numErrors;
     int numValid;
     int numInvalid;
