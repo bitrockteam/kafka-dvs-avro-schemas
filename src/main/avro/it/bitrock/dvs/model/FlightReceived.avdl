@@ -87,4 +87,22 @@ protocol FlightReceivedProtocol {
     array<FlightReceived> elements = [];
   }
 
+  record FlightInterpolated {
+     string iataNumber;
+     string icaoNumber;
+     GeographyInfo geography;
+     double speed;
+     AirportInfo departureAirport;
+     AirportInfo arrivalAirport;
+     AirlineInfo airline;
+     AirplaneInfo airplane;
+     string status;
+     timestamp_ms updated;
+     timestamp_ms interpolatedUntil;
+   }
+
+  record FlightInterpolatedList {
+    array<FlightInterpolated> elements = [];
+  }
+
 }
