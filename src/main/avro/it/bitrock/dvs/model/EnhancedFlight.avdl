@@ -1,0 +1,12 @@
+@namespace("it.bitrock.dvs.model.avro")
+protocol FlightStateRawProtocol {
+  import idl "FlightRaw.avdl";
+
+  record FlightStateRaw {
+    string icaoNumber;
+    timestamp_ms updated;
+    Geography geography;
+    double horizontalSpeed;
+  }
+
+}
