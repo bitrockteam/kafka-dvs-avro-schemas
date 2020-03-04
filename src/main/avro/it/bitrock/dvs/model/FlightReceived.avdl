@@ -17,6 +17,7 @@ protocol FlightReceivedProtocol {
     string countryIsoCode2;
     string timezone;
     string gmt;
+    string city;
   }
 
   record AirplaneInfo {
